@@ -1,0 +1,23 @@
+{
+  "name": "elvin-portfolio.github.io",
+  "description": "My first portfolio website!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch resources/sass/main.scss:resources/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elvintern/elvin-portfolio.github.io.git"
+  },
+  "author": "Jinwoo Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elvintern/elvin-portfolio.github.io/issues"
+  },
+  "homepage": "https://github.com/elvintern/elvin-portfolio.github.io#readme",
+  "dependencies": {
+    "sass": "^1.56.2"
+  }
+}
