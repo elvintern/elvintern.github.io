@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+::selection {
+  background-color: #64ffda;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -13,6 +17,39 @@ html {
 
 body {
   font: 1.6rem "Lato", sans-serif;
+  color: #111;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  width: 100%;
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(72, 72, 67);
+}
+.nav__lists {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  font-size: 2.3rem;
+  text-transform: capitalize;
+}
+.nav__link {
+  color: #eee;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+.nav__link:hover {
+  color: #64ffda;
+}
+
+.header {
+  margin-top: 20rem;
 }
 
 /*# sourceMappingURL=style.css.map */

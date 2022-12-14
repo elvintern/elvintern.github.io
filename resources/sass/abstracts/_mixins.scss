@@ -1,0 +1,7 @@
+@use 'variables' as v;
+
+@mixin link-style {
+  color: #eee;
+  text-decoration: none;
+  transition: 0.2s linear;
+}

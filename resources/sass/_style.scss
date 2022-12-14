@@ -12,10 +12,9 @@
   margin: 0;
 }
 
-// ::selection {
-//   background-color: v.$color-primary;
-//   color: v.$color-white;
-// }
+::selection {
+  background-color: v.$color-primary;
+}
 
 html {
   font-size: 62.5%;
@@ -24,4 +23,48 @@ html {
 
 body {
   font: 1.6rem 'Lato', sans-serif;
+  color: v.$color-black;
+}
+
+// ********************************************************************
+// Utility Style
+// ********************************************************************
+
+// ********************************************************************
+// Nav Style
+// ********************************************************************
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 v.$padding-section;
+  width: 100%;
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(72, 72, 67);
+
+  &__lists {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-size: 2.3rem;
+    text-transform: capitalize;
+  }
+
+  &__link {
+    @include m.link-style;
+
+    &:hover {
+      color: v.$color-primary;
+    }
+  }
+}
+
+// ********************************************************************
+// Header Style
+// ********************************************************************
+.header {
+  margin-top: 20rem;
 }
