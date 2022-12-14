@@ -22,13 +22,32 @@ html {
 }
 
 body {
-  font: 1.6rem 'Lato', sans-serif;
-  color: v.$color-black;
+  font: 1.6rem 'Roboto Condensed', sans-serif;
+  color: v.$color-white;
 }
 
 // ********************************************************************
 // Utility Style
 // ********************************************************************
+.heading-primary {
+  font-size: 7rem;
+
+  &--sub {
+    color: v.$color-grey-light;
+  }
+}
+
+.btn {
+  @include m.link-style;
+  @include m.btn-style;
+  &--about {
+    margin-top: 3rem;
+
+    &:hover {
+      color: v.$color-primary-light;
+    }
+  }
+}
 
 // ********************************************************************
 // Nav Style
@@ -43,21 +62,21 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(72, 72, 67);
+  background-color: transparent;
+  text-transform: capitalize;
 
   &__lists {
     display: flex;
     list-style: none;
     gap: 3rem;
-    font-size: 2.3rem;
-    text-transform: capitalize;
+    font-size: 2.4rem;
   }
 
   &__link {
     @include m.link-style;
 
     &:hover {
-      color: v.$color-primary;
+      color: v.$color-white-dark;
     }
   }
 }
@@ -66,5 +85,18 @@ body {
 // Header Style
 // ********************************************************************
 .header {
-  margin-top: 20rem;
+  height: 100vh;
+  padding: 12vh v.$padding-section 0;
+  @include m.bg-style('../img/bg-test-1.jpg');
+}
+
+.hero-box {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+
+  &__intro {
+    font-size: 2.7rem;
+  }
 }

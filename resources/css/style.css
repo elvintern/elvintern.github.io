@@ -7,7 +7,7 @@
 }
 
 ::selection {
-  background-color: #64ffda;
+  background-color: #00d7bb;
 }
 
 html {
@@ -16,8 +16,33 @@ html {
 }
 
 body {
-  font: 1.6rem "Lato", sans-serif;
-  color: #111;
+  font: 1.6rem "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.heading-primary {
+  font-size: 7rem;
+}
+.heading-primary--sub {
+  color: #ddd;
+}
+
+.btn {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s linear;
+  display: inline-block;
+  background-color: #333;
+  padding: 2.5rem 3rem;
+  font-size: 2.1rem;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+.btn--about {
+  margin-top: 3rem;
+}
+.btn--about:hover {
+  color: #2fe7ce;
 }
 
 .nav {
@@ -30,26 +55,38 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(72, 72, 67);
+  background-color: transparent;
+  text-transform: capitalize;
 }
 .nav__lists {
   display: flex;
   list-style: none;
   gap: 3rem;
-  font-size: 2.3rem;
-  text-transform: capitalize;
+  font-size: 2.4rem;
 }
 .nav__link {
-  color: #eee;
+  color: #fff;
   text-decoration: none;
   transition: 0.2s linear;
 }
 .nav__link:hover {
-  color: #64ffda;
+  color: #e7e7e7;
 }
 
 .header {
-  margin-top: 20rem;
+  height: 100vh;
+  padding: 12vh 10% 0;
+  background: linear-gradient(rgba(47, 231, 206, 0.8) 0%, rgba(0, 177, 154, 0.8) 100%), url("../img/bg-test-1.jpg") center/cover;
+}
+
+.hero-box {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.hero-box__intro {
+  font-size: 2.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */
