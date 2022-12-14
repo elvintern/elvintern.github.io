@@ -68,15 +68,18 @@ body {
   color: #fff;
   text-decoration: none;
   transition: 0.2s linear;
+  border-bottom: solid 2px transparent;
+  padding-bottom: 2px;
 }
 .nav__link:hover {
   color: #e7e7e7;
+  border-bottom-color: #333;
 }
 
 .header {
   height: 100vh;
   padding: 12vh 10% 0;
-  background: linear-gradient(rgba(47, 231, 206, 0.8) 0%, rgba(0, 177, 154, 0.8) 100%), url("../img/bg-test-1.jpg") center/cover;
+  background: linear-gradient(to left, rgba(47, 231, 206, 0.9) 0%, rgba(0, 177, 154, 0.7) 100%), url("../img/bg-test-1.jpg") center/cover;
 }
 
 .hero-box {

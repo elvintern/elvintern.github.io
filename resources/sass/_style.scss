@@ -74,9 +74,12 @@ body {
 
   &__link {
     @include m.link-style;
+    border-bottom: solid 2px transparent;
+    padding-bottom: 2px;
 
     &:hover {
       color: v.$color-white-dark;
+      border-bottom-color: v.$color-black-light;
     }
   }
 }
