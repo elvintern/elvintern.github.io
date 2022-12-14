@@ -1,4 +1,27 @@
-h1 {
-  color: rgb(3, 31, 147);
-  font-size: 50px;
+@use 'abstracts/variables' as v;
+@use 'abstracts/mixins' as m;
+
+// ********************************************************************
+// General Style
+// ********************************************************************
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// ::selection {
+//   background-color: v.$color-primary;
+//   color: v.$color-white;
+// }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 1.6rem 'Lato', sans-serif;
 }

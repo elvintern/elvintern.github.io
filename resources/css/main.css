@@ -1,7 +1,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -14,5 +15,3 @@ html {
 body {
   font: 1.6rem "Lato", sans-serif;
 }
-
-/*# sourceMappingURL=style.css.map */
