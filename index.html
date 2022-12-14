@@ -20,6 +20,7 @@
     />
 
     <!-- My style -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="resources/css/style.css" />
   </head>
   <body>
@@ -84,7 +85,12 @@
     <main class="main">
       <section class="section-about">
         <div class="section-about__container">
-          <div class="section-about__text">
+          <div
+            class="section-about__text"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-easing="linear"
+          >
             <h2 class="heading-secondary">About me</h2>
             <p class="paragraph paragraph--about">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
@@ -127,7 +133,12 @@
             </ul>
           </div>
 
-          <div class="section-about__img">
+          <div
+            class="section-about__img"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-easing="linear"
+          >
             <img
               src="/resources/img/profile-elvin.jpg"
               alt="Jinwoo Park profile photo"
@@ -137,5 +148,10 @@
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

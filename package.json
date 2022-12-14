@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/elvintern/elvin-portfolio.github.io#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "sass": "^1.56.2"
   }
 }
