@@ -121,7 +121,6 @@ body {
 .section-about__container {
   display: flex;
   justify-content: center;
-  gap: 5rem;
 }
 .section-about__text {
   flex: 1 1 60%;
@@ -129,24 +128,22 @@ body {
 .section-about__img {
   position: relative;
   z-index: 1;
-  flex: 1 1 35%;
+  width: 30rem;
+  height: 40rem;
 }
 .section-about__img::after {
-  display: block;
-  width: 100%;
-  height: 100%;
   content: "";
   border: 8px solid #00d7bb;
   position: absolute;
   z-index: -1;
-  top: 30px;
-  right: 30px;
+  top: 3rem;
+  right: 3rem;
   transition: 0.3s linear;
+  width: 30rem;
+  height: 40rem;
 }
 .section-about__img::before {
   display: block;
-  width: 100%;
-  height: 100%;
   content: "";
   position: absolute;
   z-index: 2;
@@ -154,17 +151,22 @@ body {
   right: 0;
   background-color: rgba(0, 215, 187, 0.6);
   transition: 0.3s linear;
+  width: 30rem;
+  height: 40rem;
 }
 .section-about__img:hover::after {
-  top: 20px;
-  right: 20px;
+  top: 2rem;
+  right: 2rem;
 }
 .section-about__img:hover::before {
   background-color: transparent;
 }
 .section-about__profile {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  width: 30rem;
+  height: 40rem;
 }
 
 .skill-list {
