@@ -67,6 +67,7 @@ body {
 // ********************************************************************
 .nav {
   display: flex;
+  z-index: 3;
   justify-content: space-between;
   align-items: center;
   padding: 0 v.$padding-section;
@@ -75,8 +76,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: transparent;
   text-transform: capitalize;
+  transition: 0.5s linear;
+  @include m.bg-style('', $opacity-1: 0, $opacity-2: 0);
 
   &__list {
     display: flex;
@@ -94,6 +96,10 @@ body {
       color: v.$color-white-dark;
       border-bottom-color: v.$color-black-light;
     }
+  }
+
+  &--bar {
+    @include m.bg-style('', $opacity-1: 0.8, $opacity-2: 0.8);
   }
 }
 

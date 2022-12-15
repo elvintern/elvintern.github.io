@@ -73,6 +73,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 3;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -85,8 +86,11 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: transparent;
   text-transform: capitalize;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(47, 231, 206, 0)), to(rgba(0, 177, 154, 0))), url("") center/cover;
+  background: linear-gradient(to left, rgba(47, 231, 206, 0) 0%, rgba(0, 177, 154, 0) 100%), url("") center/cover;
 }
 .nav__list {
   display: -webkit-box;
@@ -108,12 +112,16 @@ body {
   color: #e7e7e7;
   border-bottom-color: #22252c;
 }
+.nav--bar {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(47, 231, 206, 0.8)), to(rgba(0, 177, 154, 0.8))), url("") center/cover;
+  background: linear-gradient(to left, rgba(47, 231, 206, 0.8) 0%, rgba(0, 177, 154, 0.8) 100%), url("") center/cover;
+}
 
 .header {
   height: 100vh;
   padding: 12vh 10% 0;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(47, 231, 206, 0.9)), to(rgba(0, 177, 154, 0.7))), url("../img/bg.jpg") center/cover;
-  background: linear-gradient(to left, rgba(47, 231, 206, 0.9) 0%, rgba(0, 177, 154, 0.7) 100%), url("../img/bg.jpg") center/cover;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(47, 231, 206, 0.8)), to(rgba(0, 177, 154, 0.8))), url("../img/bg.jpg") center/cover;
+  background: linear-gradient(to left, rgba(47, 231, 206, 0.8) 0%, rgba(0, 177, 154, 0.8) 100%), url("../img/bg.jpg") center/cover;
 }
 
 .hero-box {
