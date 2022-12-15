@@ -168,8 +168,10 @@ body {
   border: 8px solid #00d7bb;
   position: absolute;
   z-index: -1;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 .section-about__img::before {
   display: block;
@@ -183,6 +185,10 @@ body {
   background-color: rgba(0, 215, 187, 0.6);
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
+}
+.section-about__img:hover::after {
+  top: 20px;
+  right: 20px;
 }
 .section-about__img:hover::before {
   background-color: transparent;
