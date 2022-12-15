@@ -41,6 +41,7 @@ body {
 }
 .paragraph--about {
   width: 80%;
+  margin-top: 2rem;
 }
 
 .btn {
@@ -123,7 +124,7 @@ body {
   justify-content: center;
 }
 .section-about__text {
-  flex: 1 1 60%;
+  flex: 1 1 50%;
 }
 .section-about__img {
   position: relative;
