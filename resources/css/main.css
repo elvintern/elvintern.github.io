@@ -229,15 +229,17 @@ body {
 }
 
 .project {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .project__img-box {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
   position: relative;
+  width: 50%;
 }
 .project__img-box::before {
   width: 100%;
@@ -262,7 +264,58 @@ body {
      object-fit: cover;
 }
 .project__text {
+  position: absolute;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  text-align: right;
+}
+.project__sort {
+  font-size: 2.5rem;
+  color: #00d7bb;
+  text-transform: capitalize;
+}
+.project__title {
+  font-size: 4.5rem;
+  text-transform: capitalize;
+  color: #eee;
+  text-decoration: none;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.project__title:hover {
+  color: #00d7bb;
+}
+.project__intro {
+  position: relative;
+  width: 60%;
+  margin-top: 2rem;
+  margin-left: auto;
+  font-size: 2.8rem;
+  background-color: #434851;
+  padding: 2rem;
+  z-index: 3;
+}
+.project__outro {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.learning-list {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 30rem));
+  gap: 1rem 3rem;
+  list-style: none;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.learning-icon {
+  font-size: 1.2rem;
+  color: #00d7bb;
+  margin-right: 1rem;
+  vertical-align: middle;
 }

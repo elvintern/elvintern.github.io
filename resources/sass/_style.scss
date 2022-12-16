@@ -181,12 +181,7 @@ body {
 }
 
 .skill-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(14rem, 20rem));
-  gap: 1rem 3rem;
-  list-style: none;
-  font-size: 2.5rem;
-  margin-top: 2rem;
+  @include m.list-style;
 
   &__icon {
     font-size: 1.2rem;
@@ -210,11 +205,13 @@ body {
 }
 
 .project {
+  position: relative;
   display: flex;
+  justify-content: space-between;
 
   &__img-box {
-    flex: 1 1 50%;
     position: relative;
+    width: 50%;
 
     &::before {
       width: 100%;
@@ -234,6 +231,52 @@ body {
   }
 
   &__text {
+    position: absolute;
     flex: 1 1 50%;
+    text-align: right;
   }
+
+  &__sort {
+    font-size: 2.5rem;
+    color: v.$color-primary;
+    text-transform: capitalize;
+  }
+
+  &__title {
+    font-size: 4.5rem;
+    text-transform: capitalize;
+    @include m.link-style;
+
+    &:hover {
+      color: v.$color-primary;
+    }
+  }
+
+  &__intro {
+    position: relative;
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: auto;
+    font-size: 2.8rem;
+    background-color: v.$color-black-light-3;
+    padding: 2rem;
+    z-index: 3;
+  }
+
+  &__outro {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+}
+
+.learning-list {
+  justify-content: end;
+  @include m.list-style(repeat(2, minmax(10rem, 30rem)));
+}
+
+.learning-icon {
+  font-size: 1.2rem;
+  color: v.$color-primary;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
