@@ -208,6 +208,23 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 12rem;
+
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+
+    .project__text {
+      text-align: left;
+    }
+
+    .project__intro {
+      margin: 2rem auto 0 0;
+    }
+
+    .learning-list {
+      justify-content: start;
+    }
+  }
 
   &__img-box {
     position: relative;
@@ -255,8 +272,7 @@ body {
   &__intro {
     position: relative;
     width: 60%;
-    margin-top: 2rem;
-    margin-left: auto;
+    margin: 2rem 0 0 auto;
     font-size: 2.8rem;
     background-color: v.$color-black-light-3;
     padding: 2rem;
