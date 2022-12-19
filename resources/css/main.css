@@ -41,6 +41,11 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(#2fe7ce), to(#00b19a));
   background-image: linear-gradient(90deg, #2fe7ce, #00b19a);
 }
+.heading-secondary--project {
+  text-align: right;
+  background-image: -webkit-gradient(linear, right top, left top, from(#2fe7ce), to(#00b19a));
+  background-image: linear-gradient(270deg, #2fe7ce, #00b19a);
+}
 
 .paragraph {
   font-size: 2.2rem;

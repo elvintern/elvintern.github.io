@@ -40,6 +40,15 @@ body {
 .heading-secondary {
   font-size: 5rem;
   @include m.heading-style;
+
+  &--project {
+    text-align: right;
+    background-image: linear-gradient(
+      270deg,
+      v.$color-primary-light,
+      v.$color-primary-dark
+    );
+  }
 }
 
 .paragraph {
