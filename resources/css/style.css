@@ -7,7 +7,7 @@
 }
 
 ::selection {
-  background-color: #00d7bb;
+  background-color: #03f4bd;
 }
 
 html {
@@ -33,11 +33,14 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
-  background-image: linear-gradient(90deg, #2fe7ce, #00b19a);
+  background-image: linear-gradient(90deg, #00f29a, #2ad7af);
 }
 .heading-secondary--project {
   text-align: right;
-  background-image: linear-gradient(270deg, #2fe7ce, #00b19a);
+  background-image: linear-gradient(270deg, #00f29a, #2ad7af);
+}
+.heading-secondary--contact {
+  text-align: center;
 }
 
 .paragraph {
@@ -46,6 +49,11 @@ body {
 .paragraph--about {
   width: 80%;
   margin-top: 2rem;
+}
+.paragraph--contact {
+  width: 80%;
+  margin: 2rem auto 0;
+  text-align: center;
 }
 
 .btn {
@@ -64,7 +72,19 @@ body {
   margin-top: 3rem;
 }
 .btn--about:hover {
-  color: #2fe7ce;
+  color: #00f29a;
+}
+.btn--contact {
+  width: 30%;
+  margin: 3rem auto 0;
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid #03f4bd;
+}
+.btn--contact:hover {
+  background-color: #03f4bd;
+  color: #111;
+  box-shadow: 0 1px 15px #2ad7af;
 }
 
 .nav {
@@ -80,7 +100,7 @@ body {
   left: 0;
   text-transform: capitalize;
   transition: 0.5s linear;
-  background: linear-gradient(to left, rgba(47, 231, 206, 0) 0%, rgba(0, 177, 154, 0) 100%), url("") center/cover;
+  background: linear-gradient(to left, rgba(0, 242, 154, 0) 0%, rgba(42, 215, 175, 0) 100%), url("") center/cover;
 }
 .nav__list {
   display: flex;
@@ -100,13 +120,13 @@ body {
   border-bottom-color: #22252c;
 }
 .nav--bar {
-  background: linear-gradient(to left, rgba(47, 231, 206, 0.8) 0%, rgba(0, 177, 154, 0.8) 100%), url("") center/cover;
+  background: linear-gradient(to left, rgba(0, 242, 154, 0.8) 0%, rgba(42, 215, 175, 0.8) 100%), url("") center/cover;
 }
 
 .header {
   height: 100vh;
   padding: 12vh 10% 0;
-  background: linear-gradient(to left, rgba(47, 231, 206, 0.8) 0%, rgba(0, 177, 154, 0.8) 100%), url("../img/bg.jpg") center/cover;
+  background: linear-gradient(to left, rgba(0, 242, 154, 0.8) 0%, rgba(42, 215, 175, 0.8) 100%), url("../img/bg.jpg") center/cover;
 }
 
 .hero-box {
@@ -139,7 +159,7 @@ body {
 }
 .section-about__img::after {
   content: "";
-  border: 8px solid #00d7bb;
+  border: 8px solid #03f4bd;
   position: absolute;
   z-index: -1;
   top: 3rem;
@@ -157,7 +177,7 @@ body {
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: rgba(0, 215, 187, 0.6);
+  background-color: rgba(3, 244, 189, 0.6);
   transition: 0.3s linear;
 }
 .section-about__img:hover::after {
@@ -183,7 +203,7 @@ body {
 }
 .skill-list__icon {
   font-size: 1.2rem;
-  color: #00d7bb;
+  color: #03f4bd;
   margin-right: 1rem;
   vertical-align: middle;
 }
@@ -229,7 +249,7 @@ body {
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: rgba(0, 215, 187, 0.6);
+  background-color: rgba(3, 244, 189, 0.6);
   transition: 0.3s linear;
 }
 .project__img-box:hover::before {
@@ -247,7 +267,7 @@ body {
 }
 .project__sort {
   font-size: 2.5rem;
-  color: #00d7bb;
+  color: #03f4bd;
   text-transform: capitalize;
 }
 .project__title {
@@ -258,7 +278,7 @@ body {
   transition: 0.2s linear;
 }
 .project__title:hover {
-  color: #00d7bb;
+  color: #03f4bd;
 }
 .project__intro {
   position: relative;
@@ -267,7 +287,7 @@ body {
   font-size: 2.8rem;
   background-color: #434851;
   padding: 2rem;
-  z-index: 3;
+  z-index: 2;
 }
 .project__outro {
   font-size: 2.5rem;
@@ -286,9 +306,39 @@ body {
 
 .learning-icon {
   font-size: 1.2rem;
-  color: #00d7bb;
+  color: #03f4bd;
   margin-right: 1rem;
   vertical-align: middle;
+}
+
+.section-contact {
+  background-color: #313741;
+  padding: 10%;
+}
+
+.contact-form {
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: column;
+}
+.contact-form__info {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.contact-form__input {
+  flex: 1 1 50%;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #888;
+  outline: none;
+  caret-color: #888;
+  transition: 0.2s linear;
+}
+.contact-form__input:focus {
+  border-bottom: 2px solid #03f4bd;
 }
 
 /*# sourceMappingURL=style.css.map */

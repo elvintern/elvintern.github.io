@@ -49,6 +49,10 @@ body {
       v.$color-primary-dark
     );
   }
+
+  &--contact {
+    text-align: center;
+  }
 }
 
 .paragraph {
@@ -57,6 +61,12 @@ body {
   &--about {
     width: 80%;
     margin-top: 2rem;
+  }
+
+  &--contact {
+    width: 80%;
+    margin: 2rem auto 0;
+    text-align: center;
   }
 }
 
@@ -68,6 +78,20 @@ body {
 
     &:hover {
       color: v.$color-primary-light;
+    }
+  }
+
+  &--contact {
+    width: 30%;
+    margin: 3rem auto 0;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid v.$color-primary;
+
+    &:hover {
+      background-color: v.$color-primary;
+      color: v.$color-black;
+      box-shadow: 0 1px 15px v.$color-primary-dark;
     }
   }
 }
@@ -285,7 +309,7 @@ body {
     font-size: 2.8rem;
     background-color: v.$color-black-light-3;
     padding: 2rem;
-    z-index: 3;
+    z-index: 2;
   }
 
   &__outro {
@@ -304,4 +328,40 @@ body {
   color: v.$color-primary;
   margin-right: 1rem;
   vertical-align: middle;
+}
+
+// ********************************************************************
+// Section-Contact Style
+// ********************************************************************
+.section-contact {
+  background-color: v.$color-black-light-2;
+  padding: v.$padding-section;
+}
+
+.contact-form {
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: column;
+
+  &__info {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  &__input {
+    flex: 1 1 50%;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid v.$color-grey;
+    outline: none;
+    caret-color: v.$color-grey;
+    transition: 0.2s linear;
+
+    &:focus {
+      border-bottom: 2px solid v.$color-primary;
+    }
+  }
 }
