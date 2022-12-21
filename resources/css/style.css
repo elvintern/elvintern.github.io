@@ -320,25 +320,55 @@ body {
   display: flex;
   margin-top: 5rem;
   flex-direction: column;
+  font-size: 2rem;
 }
 .contact-form__info {
   display: flex;
   gap: 3rem;
   margin-bottom: 3rem;
 }
+.contact-form__group {
+  width: 100%;
+  position: relative;
+}
+.contact-form__label {
+  position: absolute;
+  font-size: 2rem;
+  top: -2rem;
+  left: 1rem;
+  color: #03f4bd;
+  transition: 0.3s linear;
+  width: 100%;
+}
 .contact-form__input {
+  width: 100%;
   flex: 1 1 50%;
   padding: 1rem;
+  color: #ddd;
   font-size: 2rem;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #888;
   outline: none;
   caret-color: #888;
-  transition: 0.2s linear;
 }
 .contact-form__input:focus {
   border-bottom: 2px solid #03f4bd;
+}
+.contact-form__input::placeholder {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.contact-form__input:placeholder-shown + .contact-form__label {
+  opacity: 0;
+  top: 1rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #313741 inset !important;
+  -webkit-text-fill-color: #ddd !important;
 }
 
 /*# sourceMappingURL=style.css.map */

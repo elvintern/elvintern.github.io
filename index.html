@@ -334,28 +334,38 @@
         </p>
         <form class="contact-form">
           <div class="contact-form__info">
-            <input
-              type="text"
-              id="name"
-              placeholder="NAME *"
-              class="contact-form__input contact-form__input--name"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              placeholder="EMAIL *"
-              class="contact-form__input contact-form__input--email"
-              required
-            />
+            <div class="contact-form__group">
+              <input
+                type="text"
+                id="name"
+                placeholder="NAME *"
+                class="contact-form__input contact-form__input--name"
+                required
+              />
+              <label class="contact-form__label" for="name">NAME *</label>
+            </div>
+            <div class="contact-form__group">
+              <input
+                type="email"
+                id="email"
+                placeholder="EMAIL *"
+                class="contact-form__input contact-form__input--email"
+                required
+              />
+              <label class="contact-form__label" for="email">EMAIL *</label>
+            </div>
           </div>
-          <textarea
-            id="message"
-            rows="7"
-            placeholder="MESSAGE *"
-            class="contact-form__input contact-form__input--message"
-            required
-          ></textarea>
+          <div class="contact-form__group">
+            <textarea
+              id="message"
+              rows="7"
+              placeholder="MESSAGE *"
+              class="contact-form__input contact-form__input--message"
+              required
+            ></textarea>
+            <label class="contact-form__label" for="message">MESSAGE *</label>
+          </div>
+
           <button type="submit" class="btn btn--contact">send message</button>
         </form>
       </section>

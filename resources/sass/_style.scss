@@ -342,6 +342,7 @@ body {
   display: flex;
   margin-top: 5rem;
   flex-direction: column;
+  font-size: 2rem;
 
   &__info {
     display: flex;
@@ -349,19 +350,52 @@ body {
     margin-bottom: 3rem;
   }
 
+  &__group {
+    width: 100%;
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    font-size: 2rem;
+    top: -2rem;
+    left: 1rem;
+    color: v.$color-primary;
+    transition: 0.3s linear;
+    width: 100%;
+  }
+
   &__input {
+    width: 100%;
     flex: 1 1 50%;
     padding: 1rem;
+    color: v.$color-grey-light;
     font-size: 2rem;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid v.$color-grey;
     outline: none;
     caret-color: v.$color-grey;
-    transition: 0.2s linear;
 
     &:focus {
       border-bottom: 2px solid v.$color-primary;
     }
+
+    &::placeholder {
+      font-family: 'Roboto Condensed', sans-serif;
+    }
   }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    top: 1rem;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px v.$color-black-light-2 inset !important;
+  -webkit-text-fill-color: v.$color-grey-light !important;
 }
