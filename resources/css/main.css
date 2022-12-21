@@ -137,7 +137,7 @@ body {
 }
 .nav__link:hover {
   color: #e7e7e7;
-  border-bottom-color: #22252c;
+  border-bottom-color: #ddd;
 }
 .nav--bar {
   background: -webkit-gradient(linear, right top, left top, from(rgba(0, 242, 154, 0.8)), to(rgba(42, 215, 175, 0.8))), url("") center/cover;
