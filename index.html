@@ -332,7 +332,10 @@
           quod consequuntur quasi perferendis nam doloremque in aliquam labore
           suscipit!
         </p>
-        <form class="contact-form">
+        <form
+          class="contact-form"
+          onsubmit="sendEmail(); reset(); return false;"
+        >
           <div class="contact-form__info">
             <div class="contact-form__group">
               <input
@@ -375,6 +378,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./resources/js/index.js"></script>
   </body>
 </html>
