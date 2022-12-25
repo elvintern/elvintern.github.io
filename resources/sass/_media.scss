@@ -1,0 +1,93 @@
+@use 'abstracts/mixins' as m;
+@use 'abstracts/variables' as v;
+
+/* *************************************** */
+/* Media Stlye */
+/* *************************************** */
+/* Extra Large 2300px to ~ */
+@media only screen and (min-width: 2300px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Default range */
+
+/* Large laptop to Desktop: 1324px ~ 1728px */
+@media only screen and (max-width: 1728px) {
+  html {
+    font-size: 57%;
+  }
+}
+
+/* Large Tablet to Laptop: 848px ~ 1323px */
+@media only screen and (max-width: 1323px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+/* Large Phone to Tablet: 403px ~ 847px */
+@media only screen and (max-width: 847px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* Extra small phone to Phone: 0px ~ 402px*/
+@media only screen and (max-width: 402px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+/* *************************************** */
+/* Img Responsive Stlye */
+/* *************************************** */
+@media only screen and (min-resolution: 192dpi) and (min-width: 500px),
+  (min-width: 1000px) {
+  // .header {
+  //   @include m.bg-style('../img/compressed/hero-large.jpg');
+  // }
+
+  // .section-features {
+  //   @include m.bg-style('../img/compressed/nat-4-large.jpg');
+  // }
+
+  // .card {
+  //   &__img {
+  //     &--orange {
+  //       @include m.bg-style(
+  //         '../img/compressed/nat-5-large.jpg',
+  //         v.$color-orange-light,
+  //         v.$color-orange-dark
+  //       );
+  //     }
+
+  //     &--green {
+  //       @include m.bg-style('../img/compressed/nat-6-large.jpg');
+  //     }
+
+  //     &--blue {
+  //       @include m.bg-style(
+  //         '../img/compressed/nat-7-large.jpg',
+  //         v.$color-blue-light,
+  //         v.$color-blue-dark
+  //       );
+  //     }
+  //   }
+  // }
+
+  // .contact-box {
+  //   @include m.bg-style(
+  //     '../img/compressed/nat-10-large.jpg',
+  //     v.$color-white,
+  //     v.$color-white,
+  //     $opacity-1: 0.8,
+  //     $opacity-2: 0,
+  //     $direction: 100deg,
+  //     $stop-1: 48%,
+  //     $stop-2: 48%
+  //   );
+  // }
+}
