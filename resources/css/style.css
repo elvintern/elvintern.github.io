@@ -379,6 +379,59 @@ input:-webkit-autofill:active {
   html {
     font-size: 75%;
   }
+  .heading-primary {
+    font-size: 9rem;
+  }
+  .heading-secondary {
+    font-size: 7rem;
+  }
+  .paragraph {
+    font-size: 3rem;
+  }
+  .paragraph--about {
+    width: 90%;
+  }
+  .paragraph--contact {
+    font-size: 3.5rem;
+  }
+  .btn {
+    font-size: 3.2rem;
+  }
+  .nav__link {
+    font-size: 4rem;
+  }
+  .hero-box__intro {
+    font-size: 5.7rem;
+  }
+  .skill-list {
+    font-size: 3.2rem;
+  }
+  .projects {
+    margin-top: 7rem;
+  }
+  .project__sort {
+    font-size: 4rem;
+  }
+  .project__title {
+    font-size: 6rem;
+  }
+  .project__intro, .project__outro {
+    font-size: 3.5rem;
+  }
+  .learning-list {
+    font-size: 3.2rem;
+  }
+  .contact-form {
+    font-size: 3rem;
+    margin-top: 7rem;
+  }
+  .contact-form__label {
+    top: -3rem;
+    font-size: 3rem;
+  }
+  .contact-form__input {
+    font-size: 3rem;
+  }
 }
 /* Default range */
 /* Large laptop to Desktop: 1324px ~ 1728px */

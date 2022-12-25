@@ -9,6 +9,79 @@
   html {
     font-size: 75%;
   }
+
+  .heading-primary {
+    font-size: 9rem;
+  }
+
+  .heading-secondary {
+    font-size: 7rem;
+  }
+
+  .paragraph {
+    font-size: 3rem;
+
+    &--about {
+      width: 90%;
+    }
+
+    &--contact {
+      font-size: 3.5rem;
+    }
+  }
+
+  .btn {
+    font-size: 3.2rem;
+  }
+
+  .nav__link {
+    font-size: 4rem;
+  }
+
+  .hero-box__intro {
+    font-size: 5.7rem;
+  }
+
+  .skill-list {
+    font-size: 3.2rem;
+  }
+
+  .projects {
+    margin-top: 7rem;
+  }
+
+  .project {
+    &__sort {
+      font-size: 4rem;
+    }
+
+    &__title {
+      font-size: 6rem;
+    }
+
+    &__intro,
+    &__outro {
+      font-size: 3.5rem;
+    }
+  }
+
+  .learning-list {
+    font-size: 3.2rem;
+  }
+
+  .contact-form {
+    font-size: 3rem;
+    margin-top: 7rem;
+
+    &__label {
+      top: -3rem;
+      font-size: 3rem;
+    }
+
+    &__input {
+      font-size: 3rem;
+    }
+  }
 }
 
 /* Default range */
