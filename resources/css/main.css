@@ -518,8 +518,14 @@ input:-webkit-autofill:active {
 /* Default range */
 /* Large laptop to Desktop: 1324px ~ 1728px */
 @media only screen and (max-width: 1728px) {
-  html {
-    font-size: 57%;
+  .paragraph {
+    font-size: 2.4rem;
+  }
+  .paragraph--about {
+    width: 90%;
+  }
+  .nav__link {
+    font-size: 3rem;
   }
 }
 /* Large Tablet to Laptop: 848px ~ 1323px */
