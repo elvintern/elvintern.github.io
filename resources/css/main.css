@@ -144,6 +144,12 @@ body {
   background: linear-gradient(to left, rgba(0, 242, 154, 0.8) 0%, rgba(42, 215, 175, 0.8) 100%), url("") center/cover;
 }
 
+.hamburger {
+  display: none;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
 .header {
   height: 100vh;
   padding: 12vh 10% 0;
@@ -546,6 +552,27 @@ input:-webkit-autofill:active {
 @media only screen and (max-width: 847px) {
   html {
     font-size: 50%;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav__list--menu {
+    display: none;
+  }
+  .nav__list--menu--clicked {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: right;
+    position: absolute;
+    top: 12vh;
+    right: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(119, 119, 119, 0.7);
+    padding: 1.5rem;
   }
 }
 /* Extra small phone to Phone: 0px ~ 402px*/

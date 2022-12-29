@@ -1,5 +1,8 @@
 const header = document.querySelector('.header');
 const nav = document.querySelector('.nav');
+const hamburger = document.querySelector('.hamburger');
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const navMenu = document.querySelector('.nav__list--menu');
 
 document.addEventListener(
   'scroll',
@@ -12,6 +15,11 @@ document.addEventListener(
   },
   { passive: true }
 );
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('nav__list--menu--clicked');
+  hamburgerIcon.classList.toggle('fa-times');
+});
 
 function sendEmail() {
   Email.send({

@@ -123,6 +123,25 @@
   html {
     font-size: 50%;
   }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav__list--menu {
+    display: none;
+  }
+
+  .nav__list--menu--clicked {
+    display: flex;
+    text-align: right;
+    position: absolute;
+    top: 12vh;
+    right: 10%;
+    flex-direction: column;
+    background-color: rgba(v.$color-grey-dark, 0.7);
+    padding: 1.5rem;
+  }
 }
 
 /* Extra small phone to Phone: 0px ~ 402px*/
