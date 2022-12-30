@@ -487,6 +487,44 @@ input:-webkit-autofill:active {
     background-color: rgba(119, 119, 119, 0.7);
     padding: 1.5rem;
   }
+  .section-about__container {
+    flex-direction: column-reverse;
+  }
+  .section-about__img {
+    width: 60%;
+    margin-top: 3rem;
+  }
+  .section-about__text {
+    margin-top: 3rem;
+    font-size: 3.5rem;
+  }
+  .paragraph--about {
+    font-size: 2.7rem;
+  }
+  .project {
+    display: block;
+    margin-bottom: 40rem;
+  }
+  .project:nth-of-type(odd) .project__img-box {
+    margin-left: auto;
+  }
+  .project__img-box {
+    width: 70%;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .project__intro {
+    width: 90%;
+  }
+  .project:not(:last-of-type) {
+    margin-bottom: 45rem;
+  }
+  .paragraph--contact {
+    width: 100%;
+  }
+  .btn--contact {
+    width: 40%;
+  }
 }
 /* Extra small phone to Phone: 0px ~ 402px*/
 @media only screen and (max-width: 402px) {
