@@ -239,7 +239,6 @@ body {
 }
 
 .projects {
-  justify-content: center;
   margin-top: 5rem;
 }
 
@@ -247,7 +246,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12rem;
+  margin-bottom: 15rem;
 
   &:nth-of-type(even) {
     flex-direction: row-reverse;
@@ -326,7 +325,7 @@ body {
 
 .learning-list {
   justify-content: end;
-  @include m.list-style(repeat(2, minmax(10rem, 30rem)));
+  @include m.list-style(repeat(2, minmax(10rem, 30%)));
 }
 
 .learning-icon {

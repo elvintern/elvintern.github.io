@@ -7,7 +7,7 @@
 /* Extra Large 2300px to ~ */
 @media only screen and (min-width: 2300px) {
   html {
-    font-size: 75%;
+    font-size: 70%;
   }
 
   .heading-primary {
@@ -88,6 +88,10 @@
 
 /* Large laptop to Desktop: 1324px ~ 1728px */
 @media only screen and (max-width: 1728px) {
+  html {
+    font-size: 58%;
+  }
+
   .paragraph {
     font-size: 2.4rem;
 

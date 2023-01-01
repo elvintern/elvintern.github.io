@@ -220,7 +220,6 @@ body {
 }
 
 .projects {
-  justify-content: center;
   margin-top: 5rem;
 }
 
@@ -228,7 +227,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12rem;
+  margin-bottom: 15rem;
 }
 .project:nth-of-type(even) {
   flex-direction: row-reverse;
@@ -303,7 +302,7 @@ body {
 .learning-list {
   justify-content: end;
   display: grid;
-  grid-template-columns: repeat(2, minmax(10rem, 30rem));
+  grid-template-columns: repeat(2, minmax(10rem, 30%));
   gap: 1rem 3rem;
   list-style: none;
   font-size: 2.5rem;
@@ -383,7 +382,7 @@ input:-webkit-autofill:active {
 /* Extra Large 2300px to ~ */
 @media only screen and (min-width: 2300px) {
   html {
-    font-size: 75%;
+    font-size: 70%;
   }
   .heading-primary {
     font-size: 9rem;
@@ -442,6 +441,9 @@ input:-webkit-autofill:active {
 /* Default range */
 /* Large laptop to Desktop: 1324px ~ 1728px */
 @media only screen and (max-width: 1728px) {
+  html {
+    font-size: 58%;
+  }
   .paragraph {
     font-size: 2.4rem;
   }
