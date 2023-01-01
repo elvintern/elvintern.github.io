@@ -200,6 +200,38 @@
   html {
     font-size: 45%;
   }
+
+  .heading-primary {
+    font-size: 6rem;
+  }
+
+  .section-about__img {
+    width: 100%;
+  }
+
+  .paragraph--about {
+    width: 100%;
+  }
+
+  .project {
+    margin-bottom: 52rem;
+
+    &__img-box {
+      width: 85%;
+    }
+
+    &__intro {
+      width: 100%;
+    }
+  }
+
+  .contact-form__info {
+    flex-direction: column;
+  }
+
+  .btn--contact {
+    width: 60%;
+  }
 }
 
 /* *************************************** */

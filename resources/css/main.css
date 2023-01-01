@@ -621,6 +621,33 @@ input:-webkit-autofill:active {
   html {
     font-size: 45%;
   }
+  .heading-primary {
+    font-size: 6rem;
+  }
+  .section-about__img {
+    width: 100%;
+  }
+  .paragraph--about {
+    width: 100%;
+  }
+  .project {
+    margin-bottom: 52rem;
+  }
+  .project__img-box {
+    width: 85%;
+  }
+  .project__intro {
+    width: 100%;
+  }
+  .contact-form__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .btn--contact {
+    width: 60%;
+  }
 }
 /* *************************************** */
 /* Img Responsive Stlye */
