@@ -103,6 +103,10 @@
   .nav__link {
     font-size: 3rem;
   }
+
+  .project {
+    margin-bottom: 18rem;
+  }
 }
 
 /* Large Tablet to Laptop: 848px ~ 1323px */
@@ -112,13 +116,13 @@
   }
 
   .project:not(:last-of-type) {
-    margin-bottom: 21rem;
+    margin-bottom: 22rem;
   }
 
   .project__intro {
-    width: 60%;
+    width: 65%;
     font-size: 2.4rem;
-    padding: 1.4rem;
+    padding: 1.2rem;
   }
 }
 
@@ -187,7 +191,11 @@
   }
 
   .project:not(:last-of-type) {
-    margin-bottom: 45rem;
+    margin-bottom: 50rem;
+  }
+
+  .learning-list {
+    @include m.list-style(repeat(2, minmax(10rem, 50%)), 2.2rem);
   }
 
   .paragraph--contact {

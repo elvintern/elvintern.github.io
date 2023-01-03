@@ -100,7 +100,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 3;
+  z-index: 4;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -236,10 +236,10 @@ body {
 .skill-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(14rem, 20rem));
-  gap: 1rem 3rem;
+  gap: 1rem 2rem;
   list-style: none;
   font-size: 2.8rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .skill-list__icon {
   font-size: 1.2rem;
@@ -344,19 +344,21 @@ body {
 }
 .project__outro {
   font-size: 2.5rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .learning-list {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  position: relative;
+  z-index: 3;
   display: grid;
-  grid-template-columns: repeat(2, minmax(10rem, 30%));
-  gap: 1rem 3rem;
+  grid-template-columns: repeat(2, minmax(10rem, 32%));
+  gap: 1rem 2rem;
   list-style: none;
-  font-size: 2.8rem;
-  margin-top: 2rem;
+  font-size: 2.3rem;
+  margin-top: 1.5rem;
 }
 
 .learning-icon {
@@ -533,6 +535,9 @@ input:-webkit-autofill:active {
   .nav__link {
     font-size: 3rem;
   }
+  .project {
+    margin-bottom: 18rem;
+  }
 }
 /* Large Tablet to Laptop: 848px ~ 1323px */
 @media only screen and (max-width: 1323px) {
@@ -540,12 +545,12 @@ input:-webkit-autofill:active {
     font-size: 54%;
   }
   .project:not(:last-of-type) {
-    margin-bottom: 21rem;
+    margin-bottom: 22rem;
   }
   .project__intro {
-    width: 60%;
+    width: 65%;
     font-size: 2.4rem;
-    padding: 1.4rem;
+    padding: 1.2rem;
   }
 }
 /* Large Phone to Tablet: 403px ~ 847px */
@@ -607,7 +612,15 @@ input:-webkit-autofill:active {
     width: 90%;
   }
   .project:not(:last-of-type) {
-    margin-bottom: 45rem;
+    margin-bottom: 50rem;
+  }
+  .learning-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10rem, 50%));
+    gap: 1rem 2rem;
+    list-style: none;
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
   }
   .paragraph--contact {
     width: 100%;
