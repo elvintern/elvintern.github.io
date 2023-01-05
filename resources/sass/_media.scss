@@ -251,9 +251,9 @@
 /* *************************************** */
 @media only screen and (min-resolution: 192dpi) and (min-width: 500px),
   (min-width: 1000px) {
-  // .header {
-  //   @include m.bg-style('../img/compressed/hero-large.jpg');
-  // }
+  .header {
+    @include m.bg-style('../img/compressed/bg.jpg');
+  }
 
   // .section-features {
   //   @include m.bg-style('../img/compressed/nat-4-large.jpg');

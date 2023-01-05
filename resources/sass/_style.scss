@@ -149,7 +149,7 @@ body {
 .header {
   height: 100vh;
   padding: 12vh v.$padding-section 0;
-  @include m.bg-style('../img/bg.jpg');
+  @include m.bg-style('../img/compressed/bg-min.jpg');
 }
 
 .hero-box {

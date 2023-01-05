@@ -153,8 +153,8 @@ body {
 .header {
   height: 100vh;
   padding: 12vh 10% 0;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 242, 154, 0.8)), to(rgba(42, 215, 175, 0.8))), url("../img/bg.jpg") center/cover;
-  background: linear-gradient(to left, rgba(0, 242, 154, 0.8) 0%, rgba(42, 215, 175, 0.8) 100%), url("../img/bg.jpg") center/cover;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 242, 154, 0.8)), to(rgba(42, 215, 175, 0.8))), url("../img/compressed/bg-min.jpg") center/cover;
+  background: linear-gradient(to left, rgba(0, 242, 154, 0.8) 0%, rgba(42, 215, 175, 0.8) 100%), url("../img/compressed/bg-min.jpg") center/cover;
 }
 
 .hero-box {
@@ -665,3 +665,9 @@ input:-webkit-autofill:active {
 /* *************************************** */
 /* Img Responsive Stlye */
 /* *************************************** */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 500px), only screen and (min-resolution: 192dpi) and (min-width: 500px), (min-width: 1000px) {
+  .header {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(0, 242, 154, 0.8)), to(rgba(42, 215, 175, 0.8))), url("../img/compressed/bg.jpg") center/cover;
+    background: linear-gradient(to left, rgba(0, 242, 154, 0.8) 0%, rgba(42, 215, 175, 0.8) 100%), url("../img/compressed/bg.jpg") center/cover;
+  }
+}
