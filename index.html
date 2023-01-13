@@ -404,7 +404,15 @@
     <script>
       AOS.init();
     </script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./resources/js/index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('NQ9-R6TkAbGNIgupe');
+      })();
+    </script>
   </body>
 </html>

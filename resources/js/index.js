@@ -22,23 +22,23 @@ hamburger.addEventListener('click', () => {
 });
 
 function sendEmail() {
-  Email.send({
-    Host: 'smtp.elasticemail.com',
-    Username: 'elvintern@gmail.com',
-    Password: '6EDBE6B03E7FEA88BE99F13FB2E19486BF9C',
-    To: 'elvintern@gmail.com',
-    From: 'elvintern@gmail.com',
-    Subject: 'New Contact From Portfolio Page',
-    Body:
-      'Name: ' +
-      document.getElementById('name').value +
-      '<br> Email: ' +
-      document.getElementById('email').value +
-      '<br> Message: ' +
-      document.getElementById('message').value,
-  }).then(() =>
-    alert(
-      'Thank you for getting in touch! I will get back in touch with you soon! Have a nice day :)'
-    )
-  );
+  var params = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+
+  const serviceID = 'service_2arsoqq';
+  const templateID = 'template_2cpe30m';
+
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+      console.log(res);
+      alert('Your message sent successfully');
+    })
+    .catch((err) => console.log(err));
 }
