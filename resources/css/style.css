@@ -464,8 +464,8 @@ input:-webkit-autofill:active {
   html {
     font-size: 54%;
   }
-  .project:not(:last-of-type) {
-    margin-bottom: 22rem;
+  .project {
+    margin-bottom: 23rem;
   }
   .project__intro {
     width: 65%;
@@ -494,6 +494,14 @@ input:-webkit-autofill:active {
     background-color: rgba(119, 119, 119, 0.7);
     padding: 1.5rem;
   }
+  .header {
+    padding: 12vh 7% 0;
+  }
+  .section-about,
+  .section-project,
+  .section-contact {
+    padding: 7%;
+  }
   .section-about__container {
     flex-direction: column-reverse;
   }
@@ -510,7 +518,7 @@ input:-webkit-autofill:active {
   }
   .project {
     display: block;
-    margin-bottom: 40rem;
+    margin-bottom: 47rem;
   }
   .project:nth-of-type(odd) .project__img-box {
     margin-left: auto;
@@ -522,9 +530,6 @@ input:-webkit-autofill:active {
   }
   .project__intro {
     width: 90%;
-  }
-  .project:not(:last-of-type) {
-    margin-bottom: 50rem;
   }
   .learning-list {
     display: grid;
@@ -545,6 +550,14 @@ input:-webkit-autofill:active {
 @media only screen and (max-width: 402px) {
   html {
     font-size: 45%;
+  }
+  .header {
+    padding: 12vh 5% 0;
+  }
+  .section-about,
+  .section-project,
+  .section-contact {
+    padding: 5%;
   }
   .heading-primary {
     font-size: 6rem;
