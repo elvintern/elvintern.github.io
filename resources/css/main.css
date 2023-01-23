@@ -50,6 +50,17 @@ body {
   text-align: center;
 }
 
+.heading-tertiary {
+  font-size: 4rem;
+  text-align: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00f29a), to(#2ad7af));
+  background-image: linear-gradient(90deg, #00f29a, #2ad7af);
+}
+
 .paragraph {
   font-size: 2.8rem;
 }
@@ -246,6 +257,65 @@ body {
   color: #03f4bd;
   margin-right: 1rem;
   vertical-align: middle;
+}
+
+.container-interests {
+  margin-top: 10rem;
+}
+
+.interests {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+}
+
+.interest {
+  margin: 0 auto;
+}
+.interest__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 6rem;
+  border: solid 2px #03f4bd;
+  cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.interest__item:hover {
+  background-color: #00f29a;
+}
+.interest__item:hover .interest__icon {
+  color: #eee;
+}
+.interest__item:hover + .interest__text {
+  color: #eee;
+  -webkit-transform: translateY(-2.5rem);
+          transform: translateY(-2.5rem);
+}
+.interest__icon {
+  font-size: 5rem;
+  color: #03f4bd;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.interest__text {
+  color: transparent;
+  margin-top: 4rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-align: center;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .section-project {
@@ -544,8 +614,8 @@ input:-webkit-autofill:active {
   html {
     font-size: 54%;
   }
-  .project:not(:last-of-type) {
-    margin-bottom: 22rem;
+  .project {
+    margin-bottom: 23rem;
   }
   .project__intro {
     width: 65%;
@@ -579,6 +649,14 @@ input:-webkit-autofill:active {
     background-color: rgba(119, 119, 119, 0.7);
     padding: 1.5rem;
   }
+  .header {
+    padding: 12vh 7% 0;
+  }
+  .section-about,
+.section-project,
+.section-contact {
+    padding: 7%;
+  }
   .section-about__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -598,7 +676,7 @@ input:-webkit-autofill:active {
   }
   .project {
     display: block;
-    margin-bottom: 40rem;
+    margin-bottom: 47rem;
   }
   .project:nth-of-type(odd) .project__img-box {
     margin-left: auto;
@@ -610,9 +688,6 @@ input:-webkit-autofill:active {
   }
   .project__intro {
     width: 90%;
-  }
-  .project:not(:last-of-type) {
-    margin-bottom: 50rem;
   }
   .learning-list {
     display: grid;
@@ -633,6 +708,14 @@ input:-webkit-autofill:active {
 @media only screen and (max-width: 402px) {
   html {
     font-size: 45%;
+  }
+  .header {
+    padding: 12vh 5% 0;
+  }
+  .section-about,
+.section-project,
+.section-contact {
+    padding: 5%;
   }
   .heading-primary {
     font-size: 6rem;

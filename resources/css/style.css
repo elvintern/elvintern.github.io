@@ -43,6 +43,16 @@ body {
   text-align: center;
 }
 
+.heading-tertiary {
+  font-size: 4rem;
+  text-align: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg, #00f29a, #2ad7af);
+}
+
 .paragraph {
   font-size: 2.8rem;
 }
@@ -212,6 +222,55 @@ body {
   color: #03f4bd;
   margin-right: 1rem;
   vertical-align: middle;
+}
+
+.container-interests {
+  margin-top: 10rem;
+}
+
+.interests {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+}
+
+.interest {
+  margin: 0 auto;
+}
+.interest__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 6rem;
+  border: solid 2px #03f4bd;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.interest__item:hover {
+  background-color: #00f29a;
+}
+.interest__item:hover .interest__icon {
+  color: #eee;
+}
+.interest__item:hover + .interest__text {
+  color: #eee;
+  transform: translateY(-2.5rem);
+}
+.interest__icon {
+  font-size: 5rem;
+  color: #03f4bd;
+  transition: 0.2s linear;
+}
+.interest__text {
+  color: transparent;
+  margin-top: 4rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-align: center;
+  transition: 0.2s linear;
 }
 
 .section-project {
