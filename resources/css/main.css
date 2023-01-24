@@ -534,7 +534,7 @@ input:-webkit-autofill:active {
 /* Extra Large 2300px to ~ */
 @media only screen and (min-width: 2300px) {
   html {
-    font-size: 70%;
+    font-size: 75%;
   }
   .heading-primary {
     font-size: 9rem;
@@ -673,6 +673,11 @@ input:-webkit-autofill:active {
   }
   .paragraph--about {
     font-size: 2.7rem;
+  }
+  .interests {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
   }
   .project {
     display: block;

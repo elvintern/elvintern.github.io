@@ -7,7 +7,7 @@
 /* Extra Large 2300px to ~ */
 @media only screen and (min-width: 2300px) {
   html {
-    font-size: 70%;
+    font-size: 75%;
   }
 
   .heading-primary {
@@ -179,6 +179,12 @@
     font-size: 2.7rem;
   }
 
+  .interests {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
   .project {
     display: block;
     margin-bottom: 47rem;
@@ -199,10 +205,6 @@
       width: 90%;
     }
   }
-
-  // .project:not(:last-of-type) {
-  //   margin-bottom: 47rem;
-  // }
 
   .learning-list {
     @include m.list-style(repeat(2, minmax(10rem, 50%)), 2.2rem);
