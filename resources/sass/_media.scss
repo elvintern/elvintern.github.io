@@ -276,45 +276,4 @@
   .header {
     @include m.bg-style('../img/compressed/bg.jpg');
   }
-
-  // .section-features {
-  //   @include m.bg-style('../img/compressed/nat-4-large.jpg');
-  // }
-
-  // .card {
-  //   &__img {
-  //     &--orange {
-  //       @include m.bg-style(
-  //         '../img/compressed/nat-5-large.jpg',
-  //         v.$color-orange-light,
-  //         v.$color-orange-dark
-  //       );
-  //     }
-
-  //     &--green {
-  //       @include m.bg-style('../img/compressed/nat-6-large.jpg');
-  //     }
-
-  //     &--blue {
-  //       @include m.bg-style(
-  //         '../img/compressed/nat-7-large.jpg',
-  //         v.$color-blue-light,
-  //         v.$color-blue-dark
-  //       );
-  //     }
-  //   }
-  // }
-
-  // .contact-box {
-  //   @include m.bg-style(
-  //     '../img/compressed/nat-10-large.jpg',
-  //     v.$color-white,
-  //     v.$color-white,
-  //     $opacity-1: 0.8,
-  //     $opacity-2: 0,
-  //     $direction: 100deg,
-  //     $stop-1: 48%,
-  //     $stop-2: 48%
-  //   );
-  // }
 }

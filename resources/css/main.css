@@ -343,6 +343,11 @@ body {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+.project:nth-of-type(even) .project__links {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 .project:nth-of-type(even) .project__text {
   text-align: left;
 }
@@ -379,6 +384,27 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.project__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  font-size: 2.5rem;
+}
+.project__link {
+  position: relative;
+  z-index: 4;
+  color: #eee;
+  text-decoration: none;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.project__link:hover {
+  opacity: 0.8;
+}
+.project__icon {
+  margin-right: 1rem;
 }
 .project__text {
   position: absolute;

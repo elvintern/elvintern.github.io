@@ -291,6 +291,9 @@ body {
 .project:nth-of-type(even) {
   flex-direction: row-reverse;
 }
+.project:nth-of-type(even) .project__links {
+  justify-content: flex-end;
+}
 .project:nth-of-type(even) .project__text {
   text-align: left;
 }
@@ -323,6 +326,24 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.project__links {
+  display: flex;
+  gap: 2rem;
+  font-size: 2.5rem;
+}
+.project__link {
+  position: relative;
+  z-index: 4;
+  color: #eee;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+.project__link:hover {
+  opacity: 0.8;
+}
+.project__icon {
+  margin-right: 1rem;
 }
 .project__text {
   position: absolute;
