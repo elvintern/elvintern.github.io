@@ -679,8 +679,8 @@ input:-webkit-autofill:active {
     padding: 12vh 7% 0;
   }
   .section-about,
-.section-project,
-.section-contact {
+  .section-project,
+  .section-contact {
     padding: 7%;
   }
   .section-about__container {
@@ -744,8 +744,8 @@ input:-webkit-autofill:active {
     padding: 12vh 5% 0;
   }
   .section-about,
-.section-project,
-.section-contact {
+  .section-project,
+  .section-contact {
     padding: 5%;
   }
   .heading-primary {
