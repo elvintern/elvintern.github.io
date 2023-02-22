@@ -3,6 +3,7 @@ const nav = document.querySelector('.nav');
 const hamburger = document.querySelector('.hamburger');
 const hamburgerIcon = document.querySelector('.hamburger-icon');
 const navMenu = document.querySelector('.nav__list--menu');
+const alertMsg = document.querySelector('.alert-msg');
 
 document.addEventListener(
   'scroll',
@@ -37,8 +38,7 @@ function sendEmail() {
       document.getElementById('name').value = '';
       document.getElementById('email').value = '';
       document.getElementById('message').value = '';
-      console.log(res);
-      alert('Your message sent successfully');
+      alertMsg.classList.add('alert-msg--success');
     })
     .catch((err) => console.log(err));
 }

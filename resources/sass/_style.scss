@@ -484,6 +484,16 @@ body {
   }
 }
 
+.alert-msg {
+  color: v.$color-primary-light;
+  font-weight: 600;
+  display: none;
+
+  &--success {
+    display: block;
+  }
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
