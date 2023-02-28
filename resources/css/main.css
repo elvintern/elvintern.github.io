@@ -546,6 +546,15 @@ body {
   top: 1rem;
 }
 
+.alert-msg {
+  color: #00f29a;
+  font-weight: 600;
+  display: none;
+}
+.alert-msg--success {
+  display: block;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
