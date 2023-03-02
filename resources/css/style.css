@@ -451,12 +451,14 @@ body {
 }
 
 .alert-msg {
-  color: #00f29a;
   font-weight: 600;
-  display: none;
+  display: block;
 }
 .alert-msg--success {
-  display: block;
+  color: #00f29a;
+}
+.alert-msg--error {
+  color: rgb(255, 37, 37);
 }
 
 input:-webkit-autofill,

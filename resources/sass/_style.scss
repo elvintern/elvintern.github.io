@@ -485,12 +485,15 @@ body {
 }
 
 .alert-msg {
-  color: v.$color-primary-light;
   font-weight: 600;
-  display: none;
+  display: block;
 
   &--success {
-    display: block;
+    color: v.$color-primary-light;
+  }
+
+  &--error {
+    color: rgb(255, 37, 37);
   }
 }
 
