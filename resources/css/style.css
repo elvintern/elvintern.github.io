@@ -571,6 +571,9 @@ input:-webkit-autofill:active {
     font-size: 2.4rem;
     padding: 1.2rem;
   }
+  .in-progress-msg {
+    font-size: 2.5rem;
+  }
 }
 /* Large Phone to Tablet: 403px ~ 847px */
 @media only screen and (max-width: 847px) {
@@ -645,6 +648,9 @@ input:-webkit-autofill:active {
     list-style: none;
     font-size: 2.2rem;
     margin-top: 1.5rem;
+  }
+  .in-progress-msg {
+    font-size: 2.2rem;
   }
   .paragraph--contact {
     width: 100%;
