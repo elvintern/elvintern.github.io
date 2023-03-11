@@ -61,7 +61,7 @@
 
     &__intro,
     &__outro {
-      font-size: 3.5rem;
+      font-size: 3.2rem;
     }
   }
 
@@ -103,10 +103,6 @@
   .nav__link {
     font-size: 3rem;
   }
-
-  .project {
-    margin-bottom: 18rem;
-  }
 }
 
 /* Large Tablet to Laptop: 848px ~ 1323px */
@@ -114,15 +110,14 @@
   html {
     font-size: 54%;
   }
-
   .project {
-    margin-bottom: 23rem;
-  }
+    margin-bottom: 30rem;
 
-  .project__intro {
-    width: 65%;
-    font-size: 2.4rem;
-    padding: 1.2rem;
+    &__intro {
+      width: 65%;
+      font-size: 2.4rem;
+      padding: 1.2rem;
+    }
   }
 }
 
@@ -187,7 +182,7 @@
 
   .project {
     display: block;
-    margin-bottom: 47rem;
+    margin-bottom: 55rem;
 
     &:nth-of-type(odd) {
       .project__img-box {
@@ -199,6 +194,10 @@
       width: 70%;
       display: block;
       margin-bottom: 1rem;
+
+      &::before {
+        height: calc(100% - 3.3rem);
+      }
     }
 
     &__intro {

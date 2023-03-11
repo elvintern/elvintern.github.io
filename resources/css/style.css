@@ -286,7 +286,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15rem;
+  margin-bottom: 25rem;
 }
 .project:nth-of-type(even) {
   flex-direction: row-reverse;
@@ -468,7 +468,7 @@ body {
   transform: translate(-50%, -50%);
   font-size: 3rem;
   text-transform: capitalize;
-  background-color: black;
+  background-color: #434851;
   padding: 1rem;
 }
 
@@ -525,7 +525,7 @@ input:-webkit-autofill:active {
     font-size: 6rem;
   }
   .project__intro, .project__outro {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
   .learning-list {
     font-size: 3.2rem;
@@ -557,9 +557,6 @@ input:-webkit-autofill:active {
   .nav__link {
     font-size: 3rem;
   }
-  .project {
-    margin-bottom: 18rem;
-  }
 }
 /* Large Tablet to Laptop: 848px ~ 1323px */
 @media only screen and (max-width: 1323px) {
@@ -567,7 +564,7 @@ input:-webkit-autofill:active {
     font-size: 54%;
   }
   .project {
-    margin-bottom: 23rem;
+    margin-bottom: 30rem;
   }
   .project__intro {
     width: 65%;
@@ -625,7 +622,7 @@ input:-webkit-autofill:active {
   }
   .project {
     display: block;
-    margin-bottom: 47rem;
+    margin-bottom: 55rem;
   }
   .project:nth-of-type(odd) .project__img-box {
     margin-left: auto;
@@ -634,6 +631,9 @@ input:-webkit-autofill:active {
     width: 70%;
     display: block;
     margin-bottom: 1rem;
+  }
+  .project__img-box::before {
+    height: calc(100% - 3.3rem);
   }
   .project__intro {
     width: 90%;
