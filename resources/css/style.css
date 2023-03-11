@@ -461,6 +461,17 @@ body {
   color: rgb(255, 37, 37);
 }
 
+.in-progress-msg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-transform: capitalize;
+  background-color: black;
+  padding: 1rem;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,

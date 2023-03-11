@@ -41,8 +41,6 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// onsubmit="sendEmail(); "
-
 function sendEmail() {
   var params = {
     name: document.getElementById('name').value,
