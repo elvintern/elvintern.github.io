@@ -5,6 +5,8 @@ const hamburgerIcon = document.querySelector('.hamburger-icon');
 const navMenu = document.querySelector('.nav__list--menu');
 const alertMsg = document.querySelector('.alert-msg');
 const form = document.querySelector('form');
+const alertMsgTodo = document.querySelector('.alert-msg--todo')
+const todoLink = document.querySelector('.project__link--todo')
 
 document.addEventListener(
   'scroll',
@@ -17,6 +19,10 @@ document.addEventListener(
   },
   { passive: true }
 );
+
+todoLink.addEventListener('click', () => {
+  alertMsgTodo.textContent = 'Sorry, This project is under maintenance';
+});
 
 hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('nav__list--menu--clicked');

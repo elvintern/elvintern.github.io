@@ -309,6 +309,10 @@ body {
   justify-content: space-between;
   margin-bottom: 25rem;
 
+  &__link--todo {
+    cursor: pointer;
+  }
+
   &:nth-of-type(even) {
     flex-direction: row-reverse;
 
@@ -494,6 +498,10 @@ body {
 
   &--error {
     color: rgb(255, 37, 37);
+  }
+
+  &--todo {
+    font-size: 2.3rem;
   }
 }
 
