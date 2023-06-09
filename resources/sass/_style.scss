@@ -370,6 +370,11 @@ body {
     }
   }
 
+  &__on-going {
+    font-size: 2.2rem;
+    color: v.$color-red;
+  }
+
   &__icon {
     margin-right: 1rem;
   }
@@ -497,7 +502,7 @@ body {
   }
 
   &--error {
-    color: rgb(255, 37, 37);
+    color: v.$color-red;
   }
 
   &--todo {

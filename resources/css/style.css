@@ -345,6 +345,10 @@ body {
 .project__link:hover {
   opacity: 0.8;
 }
+.project__on-going {
+  font-size: 2.2rem;
+  color: rgb(255, 37, 37);
+}
 .project__icon {
   margin-right: 1rem;
 }
