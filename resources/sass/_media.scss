@@ -226,6 +226,13 @@
   }
 }
 
+/* Extra small phone to Phone: 402px ~ 530px*/
+@media only screen and (max-width: 550px) {
+  .project {
+    margin-bottom: 70rem;
+  }
+}
+
 /* Extra small phone to Phone: 0px ~ 402px*/
 @media only screen and (max-width: 402px) {
   html {
@@ -255,8 +262,6 @@
   }
 
   .project {
-    margin-bottom: 52rem;
-
     &__img-box {
       width: 85%;
     }

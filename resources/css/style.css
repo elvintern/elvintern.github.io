@@ -675,6 +675,12 @@ input:-webkit-autofill:active {
     width: 40%;
   }
 }
+/* Extra small phone to Phone: 402px ~ 530px*/
+@media only screen and (max-width: 550px) {
+  .project {
+    margin-bottom: 70rem;
+  }
+}
 /* Extra small phone to Phone: 0px ~ 402px*/
 @media only screen and (max-width: 402px) {
   html {
@@ -696,9 +702,6 @@ input:-webkit-autofill:active {
   }
   .paragraph--about {
     width: 100%;
-  }
-  .project {
-    margin-bottom: 52rem;
   }
   .project__img-box {
     width: 85%;
