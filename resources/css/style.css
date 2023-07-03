@@ -562,7 +562,7 @@ input:-webkit-autofill:active {
 /* Large laptop to Desktop: 1324px ~ 1728px */
 @media only screen and (max-width: 1728px) {
   html {
-    font-size: 58%;
+    font-size: 53%;
   }
   .paragraph {
     font-size: 2.4rem;
@@ -577,7 +577,7 @@ input:-webkit-autofill:active {
 /* Large Tablet to Laptop: 848px ~ 1323px */
 @media only screen and (max-width: 1323px) {
   html {
-    font-size: 54%;
+    font-size: 51%;
   }
   .project {
     margin-bottom: 34rem;
@@ -594,7 +594,7 @@ input:-webkit-autofill:active {
 /* Large Phone to Tablet: 403px ~ 847px */
 @media only screen and (max-width: 847px) {
   html {
-    font-size: 50%;
+    font-size: 48%;
   }
   .hamburger {
     display: block;
