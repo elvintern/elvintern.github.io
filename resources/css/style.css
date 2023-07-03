@@ -372,6 +372,12 @@ body {
 .project__title:hover {
   color: #03f4bd;
 }
+.project__stacks {
+  font-size: 2rem;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 2;
+}
 .project__intro {
   position: relative;
   width: 60%;
