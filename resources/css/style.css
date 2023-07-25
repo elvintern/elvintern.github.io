@@ -167,11 +167,11 @@ body {
   flex: 1 1 60%;
 }
 .section-about__img {
-  flex: 1 1 35%;
+  flex: 1 1 40%;
   position: relative;
   z-index: 1;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
 }
 .section-about__img::after {
   content: "";
@@ -179,13 +179,13 @@ body {
   position: absolute;
   z-index: -1;
   top: 3rem;
-  right: 3rem;
+  right: 18rem;
   transition: 0.3s linear;
-  width: 100%;
+  width: 70%;
   height: 100%;
 }
 .section-about__img::before {
-  width: 100%;
+  width: 70%;
   height: 100%;
   display: block;
   content: "";
@@ -198,15 +198,15 @@ body {
 }
 .section-about__img:hover::after {
   top: 2rem;
-  right: 2rem;
+  right: 19rem;
 }
 .section-about__img:hover::before {
   background-color: transparent;
 }
 .section-about__profile {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
 }
 
 .skill-list {
@@ -570,6 +570,14 @@ input:-webkit-autofill:active {
   .paragraph--about {
     width: 90%;
   }
+  .section-about__img::after {
+    top: 3rem;
+    right: 14rem;
+  }
+  .section-about__img:hover::after {
+    top: 2rem;
+    right: 15rem;
+  }
   .nav__link {
     font-size: 3rem;
   }
@@ -578,6 +586,14 @@ input:-webkit-autofill:active {
 @media only screen and (max-width: 1323px) {
   html {
     font-size: 49%;
+  }
+  .section-about__img::after {
+    top: 3rem;
+    right: 12rem;
+  }
+  .section-about__img:hover::after {
+    top: 2rem;
+    right: 13rem;
   }
   .project {
     margin-bottom: 34rem;
@@ -679,6 +695,14 @@ input:-webkit-autofill:active {
 @media only screen and (max-width: 550px) {
   .project {
     margin-bottom: 65rem;
+  }
+  .section-about__img::after {
+    top: 3rem;
+    right: 8rem;
+  }
+  .section-about__img:hover::after {
+    top: 2rem;
+    right: 9rem;
   }
 }
 /* Extra small phone to Phone: 0px ~ 402px*/

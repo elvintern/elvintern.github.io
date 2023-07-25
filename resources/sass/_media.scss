@@ -100,6 +100,19 @@
     }
   }
 
+  .section-about {
+    &__img {
+      &::after {
+        top: 3rem;
+        right: 14rem;
+      }
+      &:hover::after {
+        top: 2rem;
+        right: 15rem;
+      }
+    }
+  }
+
   .nav__link {
     font-size: 3rem;
   }
@@ -110,6 +123,20 @@
   html {
     font-size: 49%;
   }
+
+  .section-about {
+    &__img {
+      &::after {
+        top: 3rem;
+        right: 12rem;
+      }
+      &:hover::after {
+        top: 2rem;
+        right: 13rem;
+      }
+    }
+  }
+
   .project {
     margin-bottom: 34rem;
 
@@ -230,6 +257,19 @@
 @media only screen and (max-width: 550px) {
   .project {
     margin-bottom: 65rem;
+  }
+
+  .section-about {
+    &__img {
+      &::after {
+        top: 3rem;
+        right: 8rem;
+      }
+      &:hover::after {
+        top: 2rem;
+        right: 9rem;
+      }
+    }
   }
 }
 
