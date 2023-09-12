@@ -7,7 +7,7 @@
 }
 
 ::selection {
-  background-color: #03f4bd;
+  background-color: #18e6b5;
 }
 
 html {
@@ -33,11 +33,11 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
-  background-image: linear-gradient(90deg, #00f29a, #2ad7af);
+  background-image: linear-gradient(90deg, #0ef19e, #27cea7);
 }
 .heading-secondary--project {
   text-align: right;
-  background-image: linear-gradient(270deg, #00f29a, #2ad7af);
+  background-image: linear-gradient(270deg, #0ef19e, #27cea7);
 }
 .heading-secondary--contact {
   text-align: center;
@@ -50,7 +50,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
-  background-image: linear-gradient(90deg, #00f29a, #2ad7af);
+  background-image: linear-gradient(90deg, #0ef19e, #27cea7);
 }
 
 .paragraph {
@@ -82,19 +82,19 @@ body {
   margin-top: 3rem;
 }
 .btn--about:hover {
-  color: #00f29a;
+  color: #0ef19e;
 }
 .btn--contact {
   width: 30%;
   margin: 3rem auto 0;
   cursor: pointer;
   font-size: 2rem;
-  border: 1px solid #03f4bd;
+  border: 1px solid #18e6b5;
 }
 .btn--contact:hover {
-  background-color: #03f4bd;
+  background-color: #18e6b5;
   color: #111;
-  box-shadow: 0 1px 15px #2ad7af;
+  box-shadow: 0 1px 15px #27cea7;
 }
 
 .nav {
@@ -110,7 +110,7 @@ body {
   left: 0;
   text-transform: capitalize;
   transition: 0.5s linear;
-  background: linear-gradient(to left, rgba(0, 242, 154, 0) 0%, rgba(42, 215, 175, 0) 100%), url("") center/cover;
+  background: linear-gradient(to left, rgba(14, 241, 158, 0) 0%, rgba(39, 206, 167, 0) 100%), url("") center/cover;
 }
 .nav__list {
   display: flex;
@@ -130,7 +130,7 @@ body {
   border-bottom-color: #ddd;
 }
 .nav--bar {
-  background: linear-gradient(to left, rgba(0, 242, 154, 0.8) 0%, rgba(42, 215, 175, 0.8) 100%), url("") center/cover;
+  background: linear-gradient(to left, rgba(14, 241, 158, 0.8) 0%, rgba(39, 206, 167, 0.8) 100%), url("") center/cover;
 }
 
 .hamburger {
@@ -142,7 +142,7 @@ body {
 .header {
   height: 100vh;
   padding: 12vh 10% 0;
-  background: linear-gradient(to left, rgba(0, 242, 154, 0.8) 0%, rgba(42, 215, 175, 0.8) 100%), url("../img/compressed/bg-min.jpg") center/cover;
+  background: linear-gradient(to left, rgba(14, 241, 158, 0.8) 0%, rgba(39, 206, 167, 0.8) 100%), url("../img/compressed/bg-min.jpg") center/cover;
 }
 
 .hero-box {
@@ -175,7 +175,7 @@ body {
 }
 .section-about__img::after {
   content: "";
-  border: 8px solid #03f4bd;
+  border: 8px solid #18e6b5;
   position: absolute;
   z-index: -1;
   top: 3rem;
@@ -193,7 +193,7 @@ body {
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: rgba(3, 244, 189, 0.6);
+  background-color: rgba(24, 230, 181, 0.6);
   transition: 0.3s linear;
 }
 .section-about__img:hover::after {
@@ -219,7 +219,7 @@ body {
 }
 .skill-list__icon {
   font-size: 1.2rem;
-  color: #03f4bd;
+  color: #18e6b5;
   margin-right: 1rem;
   vertical-align: middle;
 }
@@ -245,12 +245,12 @@ body {
   width: 12rem;
   height: 12rem;
   border-radius: 6rem;
-  border: solid 2px #03f4bd;
+  border: solid 2px #18e6b5;
   cursor: pointer;
   transition: 0.2s linear;
 }
 .interest__item:hover {
-  background-color: #00f29a;
+  background-color: #0ef19e;
 }
 .interest__item:hover .interest__icon {
   color: #eee;
@@ -261,7 +261,7 @@ body {
 }
 .interest__icon {
   font-size: 5rem;
-  color: #03f4bd;
+  color: #18e6b5;
   transition: 0.2s linear;
 }
 .interest__text {
@@ -319,7 +319,7 @@ body {
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: rgba(3, 244, 189, 0.6);
+  background-color: rgba(24, 230, 181, 0.6);
   transition: 0.3s linear;
 }
 .project__img-box:hover::before {
@@ -359,7 +359,7 @@ body {
 }
 .project__sort {
   font-size: 2.5rem;
-  color: #03f4bd;
+  color: #18e6b5;
   text-transform: capitalize;
 }
 .project__title {
@@ -370,7 +370,7 @@ body {
   transition: 0.2s linear;
 }
 .project__title:hover {
-  color: #03f4bd;
+  color: #18e6b5;
 }
 .project__stacks {
   font-size: 2rem;
@@ -406,7 +406,7 @@ body {
 
 .learning-icon {
   font-size: 1.2rem;
-  color: #03f4bd;
+  color: #18e6b5;
   margin-right: 1rem;
   vertical-align: middle;
 }
@@ -436,7 +436,7 @@ body {
   font-size: 2rem;
   top: -2rem;
   left: 1rem;
-  color: #03f4bd;
+  color: #18e6b5;
   transition: 0.3s linear;
   width: 100%;
 }
@@ -453,7 +453,7 @@ body {
   caret-color: #888;
 }
 .contact-form__input:focus {
-  border-bottom: 2px solid #03f4bd;
+  border-bottom: 2px solid #18e6b5;
 }
 .contact-form__input::placeholder {
   font-family: "Roboto Condensed", sans-serif;
@@ -468,7 +468,7 @@ body {
   display: block;
 }
 .alert-msg--success {
-  color: #00f29a;
+  color: #0ef19e;
 }
 .alert-msg--error {
   color: rgb(255, 37, 37);
@@ -745,7 +745,7 @@ input:-webkit-autofill:active {
 /* *************************************** */
 @media only screen and (min-resolution: 192dpi) and (min-width: 500px), (min-width: 1000px) {
   .header {
-    background: linear-gradient(to left, rgba(0, 242, 154, 0.8) 0%, rgba(42, 215, 175, 0.8) 100%), url("../img/compressed/bg.jpg") center/cover;
+    background: linear-gradient(to left, rgba(14, 241, 158, 0.8) 0%, rgba(39, 206, 167, 0.8) 100%), url("../img/compressed/bg.jpg") center/cover;
   }
 }
 
