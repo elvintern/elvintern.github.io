@@ -20,12 +20,21 @@ This is my first portfolio website where I archive my experience and learning th
 
 To use SCSS(SASS), you need to install SASS
 
-### Prerequisites
+### Installation
 
-* npm
-  ```sh
-  npm install
-  ```
+1. Clone the repo
+   ```sh
+   git clone https://github.com/elvintern/elvintern.github.io.git
+   ```
+2. Install NPM packages (SASS)
+   ```sh
+   npm install
+   ```
+3. Run the app
+   ```sh
+   npm run sass
+   ```
+   
 <!-- CONTACT -->
 ## Contact
 
